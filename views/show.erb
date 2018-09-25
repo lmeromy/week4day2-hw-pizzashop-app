@@ -1,5 +1,5 @@
-<h1> Here is your order </h1>
-
+<h2> Here is your order </h2>
+<div class="container">
 <p> First Name: <%= @order.first_name %></p>
 <p> Last Name: <%= @order.last_name %></p>
 <p> Pizza Topping: <%= @order.topping %></p>
@@ -10,3 +10,4 @@
 <form method="get" action="/pizza-orders/<%=@order.id()%>/edit">
   <input type="submit" value="Edit Pizza"/>
 </form>
+</div>

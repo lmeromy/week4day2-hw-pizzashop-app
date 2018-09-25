@@ -1,10 +1,11 @@
-<h2> Everyone gets pizza! If they order it... </h2>
-<h3> <strong>All orders:</strong></h3>
+<h2> <strong>All orders:</strong></h2>
 <%# loops thru @orders array and calls pretty_name method on each element
 don't forget the = in the icecream cone for printing! %>
 <%# erb comment %>
+<div class="container">
 <%for order in @orders %>
   <p>  Name: <%= order.pretty_name() %> </p>
-  <p>  Order: <%= order.quantity %> <%= order.topping()%> pizza(s)</p>
+  <p>  Order: <%= order.quantity %> <%= order.topping()%> pizzas</p>
   <p><a href="pizza-orders/<%= order.id%>">Show Order</a></p>
 <% end %>
+</div>

@@ -1,21 +1,29 @@
 html body {
   background-color: blanchedalmond;
-   color: maroon;
+   color: crimson;
   /* justify-content: center; */
   font-family: "Comic Sans MS", sans-serif;
-
 }
 
 h1 {
-  color: maroon;
-  z-index: 5;
+  color: crimson;
   font-size: 36px;
   padding: 20px;
   text-align: center;
   text-decoration: underline;
-
 }
-.navclass {
-  color: purple;
-  align-items: flex-start;
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border: 3px solid maroon;
+  padding: 20px;
+}
+
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
