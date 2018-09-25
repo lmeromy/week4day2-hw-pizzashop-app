@@ -1,0 +1,21 @@
+html body {
+  background-color: blanchedalmond;
+   color: maroon;
+  /* justify-content: center; */
+  font-family: "Comic Sans MS", sans-serif;
+
+}
+
+h1 {
+  color: maroon;
+  z-index: 5;
+  font-size: 36px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: underline;
+
+}
+.navclass {
+  color: purple;
+  align-items: flex-start;
+}

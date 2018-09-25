@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pizza Shop</title>
+  <title>Pizzazz Pizza Shop</title>
+  <link rel='stylesheet' href='/style.css'>
 </head>
 <body>
-  <nav>
-  <ul>
-    <li> <a href = "/pizza-orders"> Show All Pizza Orders</a></li>
-    <li> <a href = "/pizza-orders/new"> Create New Pizza Order</a></li>
-  </ul>
-  </nav>
+  <h1>Pizzazz Pizza Shop</h1>
+  <div class="navclass">
+    <nav>
+      <ul>
+        <li> <a href = "/pizza-orders"> Show All Orders</a></li>
+        <li> <a href = "/pizza-orders/new"> Create New Pizza Order</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <%= yield %>
 
