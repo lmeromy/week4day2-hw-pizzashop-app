@@ -16,6 +16,8 @@ post '/pizza-orders' do
   @order = PizzaOrder.new(params)
   @order.save()
   erb(:create)
+  # can also wrap an if statement over this code to add validation
+  #  eg if quantity >= 1, etc. Or can do in new erb html
 end
 
 # new route - create. must be above route pizza-orders/:id
@@ -31,17 +33,18 @@ get '/pizza-orders/:id/edit' do
 end
 
 # update route
-post '/pizza-orders/:id/edit' do
+post '/pizza-orders/:id' do
   @order = PizzaOrder.new(params)
   @order.update()
   erb(:update)
+  # or redirect! then you don't need the erb
 end
 
 # delete route
 post '/pizza-orders/:id/delete' do
   @order = PizzaOrder.find(params[:id])
   @order.delete()
-  erb(:delete)
+  erb(:delete) # or could use a redirect here!
 end
 
 # show route - show one pizza
